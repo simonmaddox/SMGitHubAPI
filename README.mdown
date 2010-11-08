@@ -1,0 +1,25 @@
+# SMGitHubAPI
+
+This is very much work in progress - some functionality is implemented:
+
+	- Authenticating
+	- Fetching your repositories
+	- Fetching extra data about your repositories
+		- Watchers
+		- Collaborators
+		- Contributors
+		- Network (Forks)
+		- Branches
+		- Commits
+		
+As data is fetched, it is stored in CoreData for quick access later.
+
+You can choose to fetch all data for a repo with -addAllDataToRepository:, or
+you can get individual parts using other methods (have a look in the header).
+
+## Todo
+
+	- Handle rate limiting
+	- Download individual commit data (including diffs)
+	- Handle threading properly - right now everything is done on the main thread
+	- Lots more
