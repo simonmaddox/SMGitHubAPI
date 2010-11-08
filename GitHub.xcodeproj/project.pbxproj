@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* GitHubAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GitHubAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* GitHubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GitHubViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* GitHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GitHubViewController.m */; };
+		F40CE69612876C0600B03E36 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE68712876C0600B03E36 /* ASIAuthenticationDialog.m */; };
+		F40CE69712876C0600B03E36 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE68A12876C0600B03E36 /* ASIDownloadCache.m */; };
+		F40CE69812876C0600B03E36 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE68C12876C0600B03E36 /* ASIFormDataRequest.m */; };
+		F40CE69912876C0600B03E36 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE68E12876C0600B03E36 /* ASIHTTPRequest.m */; };
+		F40CE69A12876C0600B03E36 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE69212876C0600B03E36 /* ASIInputStream.m */; };
+		F40CE69B12876C0600B03E36 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE69412876C0600B03E36 /* ASINetworkQueue.m */; };
+		F40CE6C712876C3000B03E36 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE6C612876C3000B03E36 /* Reachability.m */; };
+		F40CE6E612876C5400B03E36 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40CE6E512876C5400B03E36 /* CFNetwork.framework */; };
+		F40CE6E812876C5400B03E36 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40CE6E712876C5400B03E36 /* MobileCoreServices.framework */; };
+		F40CE6EA12876C5400B03E36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40CE6E912876C5400B03E36 /* SystemConfiguration.framework */; };
+		F40CE6EC12876C5400B03E36 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F40CE6EB12876C5400B03E36 /* libz.1.2.3.dylib */; };
+		F40CE6FD12876D2500B03E36 /* GitHubPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE6FA12876D2500B03E36 /* GitHubPlan.m */; };
+		F40CE70612876D4800B03E36 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40CE70512876D4800B03E36 /* CoreData.framework */; };
+		F40CE73E1287707F00B03E36 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE7351287707F00B03E36 /* NSObject+SBJSON.m */; };
+		F40CE73F1287707F00B03E36 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE7371287707F00B03E36 /* NSString+SBJSON.m */; };
+		F40CE7401287707F00B03E36 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE7391287707F00B03E36 /* SBJsonBase.m */; };
+		F40CE7411287707F00B03E36 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE73B1287707F00B03E36 /* SBJsonParser.m */; };
+		F40CE7421287707F00B03E36 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CE73D1287707F00B03E36 /* SBJsonWriter.m */; };
+		F40CEAA21288048800B03E36 /* GitHubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CEAA01288048800B03E36 /* GitHubRepository.m */; };
+		F40CEAEE12880C6100B03E36 /* GitHubUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CEAE912880C6100B03E36 /* GitHubUser.m */; };
+		F40CEAEF12880C6100B03E36 /* GitHubBranch.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CEAEB12880C6100B03E36 /* GitHubBranch.m */; };
+		F40CEAFF12880D1D00B03E36 /* GitHubCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = F40CEAFE12880D1D00B03E36 /* GitHubCommit.m */; };
+		F4463F9012874DB1006D46A3 /* GitHubAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F4463F8F12874DB1006D46A3 /* GitHubAPI.m */; };
+		F4463F9812874E35006D46A3 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F4463F9712874E35006D46A3 /* SFHFKeychainUtils.m */; };
+		F4463FA012874E60006D46A3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4463F9F12874E60006D46A3 /* Security.framework */; };
+		F4463FB012874F28006D46A3 /* GitHub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4463FAF12874F28006D46A3 /* GitHub.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GitHubAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GitHubAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* GitHubViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitHubViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* GitHubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* GitHubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* GitHub_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHub_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* GitHub-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GitHub-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F40CE68612876C0600B03E36 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		F40CE68712876C0600B03E36 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		F40CE68812876C0600B03E36 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		F40CE68912876C0600B03E36 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		F40CE68A12876C0600B03E36 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		F40CE68B12876C0600B03E36 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		F40CE68C12876C0600B03E36 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		F40CE68D12876C0600B03E36 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		F40CE68E12876C0600B03E36 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		F40CE68F12876C0600B03E36 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		F40CE69012876C0600B03E36 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		F40CE69112876C0600B03E36 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		F40CE69212876C0600B03E36 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		F40CE69312876C0600B03E36 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		F40CE69412876C0600B03E36 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		F40CE69512876C0600B03E36 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		F40CE6C512876C3000B03E36 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F40CE6C612876C3000B03E36 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F40CE6E512876C5400B03E36 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F40CE6E712876C5400B03E36 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F40CE6E912876C5400B03E36 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F40CE6EB12876C5400B03E36 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		F40CE6F912876D2500B03E36 /* GitHubPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubPlan.h; sourceTree = "<group>"; };
+		F40CE6FA12876D2500B03E36 /* GitHubPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubPlan.m; sourceTree = "<group>"; };
+		F40CE70512876D4800B03E36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F40CE7331287707F00B03E36 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		F40CE7341287707F00B03E36 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		F40CE7351287707F00B03E36 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		F40CE7361287707F00B03E36 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		F40CE7371287707F00B03E36 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		F40CE7381287707F00B03E36 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		F40CE7391287707F00B03E36 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		F40CE73A1287707F00B03E36 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		F40CE73B1287707F00B03E36 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		F40CE73C1287707F00B03E36 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		F40CE73D1287707F00B03E36 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		F40CEA9F1288048800B03E36 /* GitHubRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubRepository.h; sourceTree = "<group>"; };
+		F40CEAA01288048800B03E36 /* GitHubRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubRepository.m; sourceTree = "<group>"; };
+		F40CEAE812880C6100B03E36 /* GitHubUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubUser.h; sourceTree = "<group>"; };
+		F40CEAE912880C6100B03E36 /* GitHubUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubUser.m; sourceTree = "<group>"; };
+		F40CEAEA12880C6100B03E36 /* GitHubBranch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubBranch.h; sourceTree = "<group>"; };
+		F40CEAEB12880C6100B03E36 /* GitHubBranch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubBranch.m; sourceTree = "<group>"; };
+		F40CEAFD12880D1D00B03E36 /* GitHubCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubCommit.h; sourceTree = "<group>"; };
+		F40CEAFE12880D1D00B03E36 /* GitHubCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubCommit.m; sourceTree = "<group>"; };
+		F4463F8E12874DB1006D46A3 /* GitHubAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GitHubAPI.h; sourceTree = "<group>"; };
+		F4463F8F12874DB1006D46A3 /* GitHubAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GitHubAPI.m; sourceTree = "<group>"; };
+		F4463F9612874E35006D46A3 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		F4463F9712874E35006D46A3 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		F4463F9F12874E60006D46A3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F4463FAB12874F1F006D46A3 /* GitHub.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = GitHub.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				F4463FA012874E60006D46A3 /* Security.framework in Frameworks */,
+				F40CE6E612876C5400B03E36 /* CFNetwork.framework in Frameworks */,
+				F40CE6E812876C5400B03E36 /* MobileCoreServices.framework in Frameworks */,
+				F40CE6EA12876C5400B03E36 /* SystemConfiguration.framework in Frameworks */,
+				F40CE6EC12876C5400B03E36 /* libz.1.2.3.dylib in Frameworks */,
+				F40CE70612876D4800B03E36 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F40CE7321287707F00B03E36 /* JSON */,
+				F40CE6C412876C3000B03E36 /* Reachability */,
+				F40CE68512876C0600B03E36 /* ASIHTTPRequest */,
+				F4463F9112874E23006D46A3 /* ScifiHifi */,
+				F4463F8D12874D9B006D46A3 /* GitHub */,
+				1D3623240D0F684500981E51 /* GitHubAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GitHubAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* GitHubViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* GitHubViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GitHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* GitHub_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* GitHubViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* GitHub-Info.plist */,
+				F4463FAF12874F28006D46A3 /* GitHub.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				F4463F9F12874E60006D46A3 /* Security.framework */,
+				F40CE6E512876C5400B03E36 /* CFNetwork.framework */,
+				F40CE6E712876C5400B03E36 /* MobileCoreServices.framework */,
+				F40CE6E912876C5400B03E36 /* SystemConfiguration.framework */,
+				F40CE6EB12876C5400B03E36 /* libz.1.2.3.dylib */,
+				F40CE70512876D4800B03E36 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40CE68512876C0600B03E36 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F40CE68612876C0600B03E36 /* ASIAuthenticationDialog.h */,
+				F40CE68712876C0600B03E36 /* ASIAuthenticationDialog.m */,
+				F40CE68812876C0600B03E36 /* ASICacheDelegate.h */,
+				F40CE68912876C0600B03E36 /* ASIDownloadCache.h */,
+				F40CE68A12876C0600B03E36 /* ASIDownloadCache.m */,
+				F40CE68B12876C0600B03E36 /* ASIFormDataRequest.h */,
+				F40CE68C12876C0600B03E36 /* ASIFormDataRequest.m */,
+				F40CE68D12876C0600B03E36 /* ASIHTTPRequest.h */,
+				F40CE68E12876C0600B03E36 /* ASIHTTPRequest.m */,
+				F40CE68F12876C0600B03E36 /* ASIHTTPRequestConfig.h */,
+				F40CE69012876C0600B03E36 /* ASIHTTPRequestDelegate.h */,
+				F40CE69112876C0600B03E36 /* ASIInputStream.h */,
+				F40CE69212876C0600B03E36 /* ASIInputStream.m */,
+				F40CE69312876C0600B03E36 /* ASINetworkQueue.h */,
+				F40CE69412876C0600B03E36 /* ASINetworkQueue.m */,
+				F40CE69512876C0600B03E36 /* ASIProgressDelegate.h */,
+			);
+			name = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		F40CE6C412876C3000B03E36 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F40CE6C512876C3000B03E36 /* Reachability.h */,
+				F40CE6C612876C3000B03E36 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		F40CE6F812876D1400B03E36 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F40CEAFD12880D1D00B03E36 /* GitHubCommit.h */,
+				F40CEAFE12880D1D00B03E36 /* GitHubCommit.m */,
+				F40CEAE812880C6100B03E36 /* GitHubUser.h */,
+				F40CEAE912880C6100B03E36 /* GitHubUser.m */,
+				F40CEAEA12880C6100B03E36 /* GitHubBranch.h */,
+				F40CEAEB12880C6100B03E36 /* GitHubBranch.m */,
+				F40CEA9F1288048800B03E36 /* GitHubRepository.h */,
+				F40CEAA01288048800B03E36 /* GitHubRepository.m */,
+				F40CE6F912876D2500B03E36 /* GitHubPlan.h */,
+				F40CE6FA12876D2500B03E36 /* GitHubPlan.m */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		F40CE7321287707F00B03E36 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F40CE7331287707F00B03E36 /* JSON.h */,
+				F40CE7341287707F00B03E36 /* NSObject+SBJSON.h */,
+				F40CE7351287707F00B03E36 /* NSObject+SBJSON.m */,
+				F40CE7361287707F00B03E36 /* NSString+SBJSON.h */,
+				F40CE7371287707F00B03E36 /* NSString+SBJSON.m */,
+				F40CE7381287707F00B03E36 /* SBJsonBase.h */,
+				F40CE7391287707F00B03E36 /* SBJsonBase.m */,
+				F40CE73A1287707F00B03E36 /* SBJsonParser.h */,
+				F40CE73B1287707F00B03E36 /* SBJsonParser.m */,
+				F40CE73C1287707F00B03E36 /* SBJsonWriter.h */,
+				F40CE73D1287707F00B03E36 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F4463F8D12874D9B006D46A3 /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				F40CE6F812876D1400B03E36 /* Managed Objects */,
+				F4463F8E12874DB1006D46A3 /* GitHubAPI.h */,
+				F4463F8F12874DB1006D46A3 /* GitHubAPI.m */,
+			);
+			name = GitHub;
+			sourceTree = "<group>";
+		};
+		F4463F9112874E23006D46A3 /* ScifiHifi */ = {
+			isa = PBXGroup;
+			children = (
+				F4463F9612874E35006D46A3 /* SFHFKeychainUtils.h */,
+				F4463F9712874E35006D46A3 /* SFHFKeychainUtils.m */,
+			);
+			name = ScifiHifi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GitHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GitHub" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHub;
+			productName = GitHub;
+			productReference = 1D6058910D05DD3D006BFB54 /* GitHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GitHub" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GitHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* GitHubViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GitHubAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* GitHubViewController.m in Sources */,
+				F4463F9012874DB1006D46A3 /* GitHubAPI.m in Sources */,
+				F4463F9812874E35006D46A3 /* SFHFKeychainUtils.m in Sources */,
+				F4463FB012874F28006D46A3 /* GitHub.xcdatamodeld in Sources */,
+				F40CE69612876C0600B03E36 /* ASIAuthenticationDialog.m in Sources */,
+				F40CE69712876C0600B03E36 /* ASIDownloadCache.m in Sources */,
+				F40CE69812876C0600B03E36 /* ASIFormDataRequest.m in Sources */,
+				F40CE69912876C0600B03E36 /* ASIHTTPRequest.m in Sources */,
+				F40CE69A12876C0600B03E36 /* ASIInputStream.m in Sources */,
+				F40CE69B12876C0600B03E36 /* ASINetworkQueue.m in Sources */,
+				F40CE6C712876C3000B03E36 /* Reachability.m in Sources */,
+				F40CE6FD12876D2500B03E36 /* GitHubPlan.m in Sources */,
+				F40CE73E1287707F00B03E36 /* NSObject+SBJSON.m in Sources */,
+				F40CE73F1287707F00B03E36 /* NSString+SBJSON.m in Sources */,
+				F40CE7401287707F00B03E36 /* SBJsonBase.m in Sources */,
+				F40CE7411287707F00B03E36 /* SBJsonParser.m in Sources */,
+				F40CE7421287707F00B03E36 /* SBJsonWriter.m in Sources */,
+				F40CEAA21288048800B03E36 /* GitHubRepository.m in Sources */,
+				F40CEAEE12880C6100B03E36 /* GitHubUser.m in Sources */,
+				F40CEAEF12880C6100B03E36 /* GitHubBranch.m in Sources */,
+				F40CEAFF12880D1D00B03E36 /* GitHubCommit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GitHub_Prefix.pch;
+				INFOPLIST_FILE = "GitHub-Info.plist";
+				PRODUCT_NAME = GitHub;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GitHub_Prefix.pch;
+				INFOPLIST_FILE = "GitHub-Info.plist";
+				PRODUCT_NAME = GitHub;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F4463FAF12874F28006D46A3 /* GitHub.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F4463FAB12874F1F006D46A3 /* GitHub.xcdatamodel */,
+			);
+			currentVersion = F4463FAB12874F1F006D46A3 /* GitHub.xcdatamodel */;
+			path = GitHub.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
