@@ -33,6 +33,8 @@
 		[gitHub addAllDataToRepository:repo];
 		NSLog(@"%@", repo);
 	}
+	
+	[gitHub release];
 }
 
 
